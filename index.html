@@ -1,0 +1,68 @@
+<body onload="loadGame()">
+<link rel="stylesheet" type="text/css" href="main.css" />
+<table id="states">
+<tr><td><input type="button" value="Fight" onClick="changestate(1)" id="changestate" /></td>
+<td><input type="button" value="Rest" onClick="changestate(0)" id="changestate" /></td>
+<td><input type="button" value="Craft" onClick="changestate(3)" id="changestate" /></td>
+<td><input type="button" value="Buy" onClick="changestate(4)" id="changestate" /></td>
+</tr>
+</table>
+
+
+
+
+<div id="you">
+
+<div id="spells">
+<input type="button" value="Spark" onClick="spark()" /><br />
+<input type="button" value="Rage" onClick="tempattack()" id="tempattack" />
+</div>
+<label>Level:</label> <span id="playerlvl">1</span><br />
+<label>Exp:</label> <span id="exp">0</span><br />
+<label>Skill Points:</label> <span id="skillpts">0</span><br />
+<label>HP:</label> <span id="health">100</span><br />
+<label>Mana:</label> <span id="mana">100</span>/<span id="maxmana">100</span><br />
+<label>Attack:</label> <span id="attack">10</span><br />
+<label>Gold:</label> <span id="gold">0</span><br />
+<label>Rubies:</label> <span id="rubies">0</span><br />
+<label>Sapphires:</label> <span id="sapphires">0</span><br />
+<label>Emeralds:</label> <span id="emeralds">0</span><br />
+<label>Diamonds:</label> <span id="diamonds">0</span><br />
+<label>Weapon:</label> <span id="weapon"></span>
+</div>
+
+<div id="enemypanel" class="panel">
+<div id="enemy">
+<span id="enemyname"></span><br />
+Enemy Attack: <span id="enemyatk"></span><br />
+Enemy HP: <span id="enemyhp"></span>
+<br />
+</div>
+<span id="defeated"></span><br />
+<input type="button" value="<<" onClick="prevdungeon()" id="previousdungeon" disabled />
+<label>Dungeon level </label> <span id="dungeonlvl"></span>/<span id="maxdungeonlvl"></span>
+<input type="button" value=">>" onClick="nextdungeon()" id="nextdungeon" disabled /><br />
+</div>
+
+<div id="craftingpanel" class="panel">
+<label>Use Rubies</label><input type="number" id="userubies" min="0" max="0"><br />
+<label>Use Sapphires</label><input type="number" id="usesapphires" min="0" max="0"><br />
+<label>Use Emeralds</label><input type="number" id="useemeralds" min="0" max="0"><br />
+<label>Use Diamonds</label><input type="number" id="usediamonds" min="0" max="0"><br />
+<input type="button" value="Craft" onClick="craft()" /><br />
+</div>
+
+<div id="buypanel" class="panel">
+<h1>Buying</h1>
+</div>
+
+<footer>
+<button onclick="deletesave()">Deletesave</button>
+<button onclick="manualsave()">Save</button>
+<button onclick="loadGame()">Load</button>
+</footer>
+		
+<script type="text/javascript" src="main.js"></script>
+
+
+</body>

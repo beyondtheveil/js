@@ -1,0 +1,46 @@
+body{
+font-family:calibri
+}
+
+input {background: rgb(204,204,255)}
+footer{
+	position: relative;
+	bottom: -200px
+	}
+	
+#spells{
+position:relative;
+  width:100px;
+  float:left;
+  display:block;
+  height:200px;
+}
+	
+#you label{
+  width:10%;
+  display:block;
+  float:left;
+  text-align:left;
+    margin-left:4px;
+}
+
+#you .span{
+  margin-left:4px;
+  float:left;
+}
+
+.panel{
+display:none;
+ position:relative;
+ float:right;
+ margin-right:10%;
+ border:1px solid black;
+}
+
+
+
+#states input{
+background: rgb(100,204,200)
+}
+
+
